@@ -12,18 +12,18 @@ const ProductPagePage = () => {
 
   const [textfieldvalue, setTextfieldvalue] = React.useState("");
 
-  const [isPopupOpen, setPopupOpen] = useState(false);
+  const [isReviewPopupOpen, setReviewPopupOpen] = useState(false);
 
-  const openPopup = () => {
-      setPopupOpen(true);
+  const openReviewPopup = () => {
+      setReviewPopupOpen(true);
   };
 
-  const closePopup = () => {
-      setPopupOpen(false);
+  const closeReviewPopup = () => {
+      setReviewPopupOpen(false);
   };
 
   const handleReview = () => {
-    openPopup();
+    openReviewPopup();
   }
 
   const customStyles = {
@@ -498,15 +498,15 @@ const ProductPagePage = () => {
             </div>
           </div>
           <Modal
-            isOpen={isPopupOpen}
-            onRequestClose={closePopup}
+            isOpen={isReviewPopupOpen}
+            onRequestClose={closeReviewPopup}
             style={customStyles}
             contentLabel="Review Success"
           >
             <div>
               <h2>Successfully Placed A Review!</h2>
               <div className="action-buttons">
-                <button className="close-button" style={{ backgroundColor: 'blue' }} onClick={closePopup}>Close</button>
+                <button className="close-button" style={{ backgroundColor: 'blue' }} onClick={closeReviewPopup}>Close</button>
               </div>
             </div>
           </Modal>

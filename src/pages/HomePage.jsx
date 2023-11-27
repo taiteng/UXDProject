@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from 'react-modal';
 
 import { useNavigate } from "react-router-dom";
 
@@ -15,14 +16,59 @@ const HomePagePage = () => {
 
   const [textfieldvalue, setTextfieldvalue] = React.useState("");
 
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+      setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+      setPopupOpen(false);
+  };
+
   const products = [
-    { category: 'Sustainable', productName: 'Eco Product 1', price: 19.99, imageSrc: 'images/product1.jpg', imageName: 'Product Image 1' },
-    { category: 'Organic', productName: 'Eco Product 2', price: 29.99, imageSrc: 'images/product2.jpg', imageName: 'Product Image 2' },
-    { category: 'Miscellaneous', productName: 'Eco Product 3', price: 39.99, imageSrc: 'images/product3.jpg', imageName: 'Product Image 3' },
+    { category: 'Sustainable', productName: 'Eco Product 1', price: 19.99, imageSrc: 'images/product1.jpg', imageName: 'Product Image 1', onCart: openPopup },
+    { category: 'Organic', productName: 'Eco Product 2', price: 29.99, imageSrc: 'images/product2.jpg', imageName: 'Product Image 2', onCart: openPopup },
+    { category: 'Miscellaneous', productName: 'Eco Product 3', price: 39.99, imageSrc: 'images/product3.jpg', imageName: 'Product Image 3', onCart: openPopup },
   ];
+
+  const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    },
+  };
 
   return (
     <>
+      <style>
+      {`
+        .action-buttons {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        
+        .close-button {
+          background-color: #1976d2;
+          color: #ffffff;
+          border: none;
+          border-radius: 4px;
+          padding: 8px 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin-left: 10px;
+        }
+        
+        .close-button:hover, {
+          background-color: #1565c0;
+        }
+      `}
+      </style>
       <div className="bg-white-A700 flex flex-col font-roboto items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <Header className="flex flex-col gap-[60px] items-center justify-center md:px-5 px-[170px] py-[60px] w-full" />
         <div className="flex flex-col md:gap-10 gap-[60px] items-center justify-center p-[60px] md:px-10 sm:px-5 w-full">
@@ -74,6 +120,19 @@ const HomePagePage = () => {
             >
               Eco-Friendly Products
             </Text>
+            <Modal
+              isOpen={isPopupOpen}
+              onRequestClose={closePopup}
+              style={customStyles}
+              contentLabel="Add to Cart"
+            >
+              <div>
+                <h2>Added to cart Successfully!</h2>
+                <div className="action-buttons">
+                  <button className="close-button" style={{ backgroundColor: 'blue' }} onClick={closePopup}>Close</button>
+                </div>
+              </div>
+            </Modal>
             <List className="sm:flex-col flex-row gap-10 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center py-5 w-full" orientation="horizontal">
               {products.map((product, index) => (
                 <ProductCard key={index} {...product} onClick={() => navigate('/productpage')} />
