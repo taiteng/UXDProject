@@ -118,7 +118,7 @@ const OrderStatusPagePage = () => {
                 <div className="flex flex-1 flex-col gap-10 items-center justify-center py-5 w-full">
                   <OrderStatusCard
                     orderName={`Order 1`}
-                    deliveryDate={`To be delivered by 12/01/2022`}
+                    deliveryDate={`To be delivered by 12/01/2023`}
                     productName={`Product 1`}
                     status={`In Progress`}
                     onEdit={handleEdit}
@@ -128,7 +128,7 @@ const OrderStatusPagePage = () => {
 
                   <OrderStatusCard
                     orderName={`Order 3`}
-                    deliveryDate={`Delivered on 11/30/2022`}
+                    deliveryDate={`Delivered on 11/30/2023`}
                     productName={`Product 2`}
                     status={`Delivered`}
                     onEdit={handleEdit}
@@ -138,7 +138,7 @@ const OrderStatusPagePage = () => {
 
                   <OrderStatusCard
                     orderName={`Order 5`}
-                    deliveryDate={`To be delivered by 12/02/2022`}
+                    deliveryDate={`To be delivered by 12/02/2023`}
                     productName={`Product 3`}
                     status={`In Progress`}
                     onEdit={handleEdit}
@@ -149,7 +149,7 @@ const OrderStatusPagePage = () => {
                 <div className="flex flex-1 flex-col gap-10 items-center justify-center py-5 w-full">
                   <OrderStatusCard
                     orderName={`Order 2`}
-                    deliveryDate={`Delivered on 11/30/2022`}
+                    deliveryDate={`Delivered on 11/30/2023`}
                     productName={`Product 2`}
                     status={`Delivered`}
                     onEdit={handleEdit}
@@ -159,7 +159,7 @@ const OrderStatusPagePage = () => {
 
                   <OrderStatusCard
                     orderName={`Order 4`}
-                    deliveryDate={`Delivered on 11/30/2022`}
+                    deliveryDate={`Delivered on 11/30/2023`}
                     productName={`Product 4`}
                     status={`Delivered`}
                     onEdit={handleEdit}
@@ -169,7 +169,7 @@ const OrderStatusPagePage = () => {
 
                   <OrderStatusCard
                     orderName={`Order 6`}
-                    deliveryDate={`To be delivered by 12/02/2022`}
+                    deliveryDate={`To be delivered by 12/02/2023`}
                     productName={`Product 6`}
                     status={`In Progress`}
                     onEdit={handleEdit}
