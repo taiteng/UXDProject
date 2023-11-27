@@ -128,12 +128,14 @@ const CheckoutPagePage = () => {
                   Email
                 </Text>
                 <Input
-                  name="textfield_One"
-                  placeholder=""
-                  className="p-0 w-full"
-                  wrapClassName="border border-black-900_19 border-solid flex h-9 w-full"
+                  name="textfield_Two"
+                  placeholder="Enter your email address"
+                  className="p-0 placeholder:text-black-900_7f text-left text-sm w-full"
+                  wrapClassName="border border-black-900_19 border-solid w-full"
+                  type="email"
                   shape="round"
                   color="white_A700"
+                  size="xs"
                   variant="fill"
                 ></Input>
                 <Text
