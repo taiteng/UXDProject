@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Img, Text } from 'components';
 
-const ProductCard = ({ category, imageSrc, imageName, productName, price, onClick }) => {
+const ProductCard = ({ category, imageSrc, imageName, productName, price, onClick, onCart }) => {
 
   return (
     <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full" onClick={onClick}>
@@ -35,11 +35,15 @@ const ProductCard = ({ category, imageSrc, imageName, productName, price, onClic
           ${price}
         </Text>
         <div className="flex flex-row gap-2 items-center justify-start w-full">
+          <div
+          onClick={onCart}
+          >
           <Img
             className="h-[19px] md:h-auto object-cover w-[18px]"
             src="images/cart_icon.png"
             alt="icon"
           />
+          </div>
           <Img
             className="h-[19px] md:h-auto object-cover w-[18px]"
             src="images/like_icon.png"
