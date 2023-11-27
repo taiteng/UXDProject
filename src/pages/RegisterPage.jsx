@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, Line, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import { Dropdown } from "components/DropDown";
 
 const RegisterPagePage = () => {
   const navigate = useNavigate();
 
   const [textfieldvalue, setTextfieldvalue] = React.useState("");
+
+  const roles = [
+    { value: "buyer", label: "Buyer" },
+    { value: "seller", label: "Seller" },
+  ];
+
+  const [selectedRole, setSelectedRole] = useState("");
+
+  const handleRoleChange = (value) => {
+    setSelectedRole(value);
+  };
 
   return (
     <>
@@ -113,16 +125,18 @@ const RegisterPagePage = () => {
                 >
                   Choose Role
                 </Text>
-                <Input
-                  name="textfield_Five"
-                  placeholder="User / Seller"
-                  className="p-0 placeholder:text-black-900_7f text-left text-sm w-full"
+                <Dropdown
+                  name="roleDropdown"
+                  placeholder="Select a role"
+                  options={roles}
+                  value={selectedRole}
+                  onChange={handleRoleChange}
                   wrapClassName="border border-black-900_19 border-solid w-full"
                   shape="round"
                   color="white_A700"
                   size="xs"
                   variant="fill"
-                ></Input>
+                />
               </div>
               <div className="flex flex-col items-start justify-start w-auto">
                 <Button

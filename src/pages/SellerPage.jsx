@@ -1,18 +1,79 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from 'react-modal';
 
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import SellerProductCard from "components/SellerProductCard";
 
 const SellerPagePage = () => {
   const navigate = useNavigate();
 
   const [textfieldvalue, setTextfieldvalue] = React.useState("");
 
+  const handleEdit = (product) => {
+    console.log(`Edit product: ${product}`);
+  };
+
+  const handleDelete = (product) => {
+    openPopup();
+  };
+
+  const products = [
+    { name: "Product 1", data: "Product Data 1", imageSrc: "images/product1.jpg" },
+    { name: "Product 2", data: "Product Data 2", imageSrc: "images/product2.jpg" },
+    { name: "Product 3", data: "Product Data 3", imageSrc: "images/product3.jpg" },
+  ];
+
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+      setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+      setPopupOpen(false);
+  };
+
+  const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    },
+  };
+
   return (
     <>
+      <style>
+      {`
+        .action-buttons {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        
+        .close-button {
+          background-color: #1976d2;
+          color: #ffffff;
+          border: none;
+          border-radius: 4px;
+          padding: 8px 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin-left: 10px;
+        }
+        
+        .close-button:hover, {
+          background-color: #1565c0;
+        }
+      `}
+      </style>
       <div className="bg-white-A700 flex flex-col font-roboto items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <Header className="flex flex-col gap-[60px] items-center justify-center md:px-5 px-[170px] py-[60px] w-full" />
         <div className="flex flex-col md:gap-10 gap-[60px] items-center justify-center md:px-10 sm:px-5 px-[170px] py-[60px] w-full">
@@ -136,121 +197,30 @@ const SellerPagePage = () => {
               className="sm:flex-col flex-row gap-10 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center py-5 w-full"
               orientation="horizontal"
             >
-              <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
-                <div className="flex flex-col h-[340px] md:h-auto items-start justify-start w-full">
-                  <div className="bg-blue_gray-100_7f flex flex-col items-center justify-end p-[161px] md:px-10 sm:px-5 w-full">
-                    <Text
-                      className="text-black-900 text-center text-xs"
-                      size="txtRobotoRegular12"
-                    >
-                      Product Image
-                    </Text>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 items-start justify-start p-3 w-full">
-                  <Text
-                    className="text-base text-black-900 w-full"
-                    size="txtRobotoRegular16"
-                  >
-                    Product 1
-                  </Text>
-                  <Text
-                    className="text-black-900 text-xl w-full"
-                    size="txtRobotoMedium20"
-                  >
-                    Product Data
-                  </Text>
-                  <div className="flex flex-row gap-2 items-center justify-start w-full">
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/pencil_icon.png"
-                      alt="icon"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/bin_icon.png"
-                      alt="icon_One"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
-                <div className="flex flex-col h-[340px] md:h-auto items-start justify-start w-full">
-                  <div className="bg-blue_gray-100_7f flex flex-col items-center justify-end p-[161px] md:px-10 sm:px-5 w-full">
-                    <Text
-                      className="text-black-900 text-center text-xs"
-                      size="txtRobotoRegular12"
-                    >
-                      Product Image
-                    </Text>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 items-start justify-start p-3 w-full">
-                  <Text
-                    className="text-base text-black-900 w-full"
-                    size="txtRobotoRegular16"
-                  >
-                    Product 2
-                  </Text>
-                  <Text
-                    className="text-black-900 text-xl w-full"
-                    size="txtRobotoMedium20"
-                  >
-                    Product Data
-                  </Text>
-                  <div className="flex flex-row gap-2 items-center justify-start w-full">
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/pencil_icon.png"
-                      alt="icon"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/bin_icon.png"
-                      alt="icon_One"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
-                <div className="flex flex-col h-[340px] md:h-auto items-start justify-start w-full">
-                  <div className="bg-blue_gray-100_7f flex flex-col items-center justify-end p-[161px] md:px-10 sm:px-5 w-full">
-                    <Text
-                      className="text-black-900 text-center text-xs"
-                      size="txtRobotoRegular12"
-                    >
-                      Product Image
-                    </Text>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 items-start justify-start p-3 w-full">
-                  <Text
-                    className="text-base text-black-900 w-full"
-                    size="txtRobotoRegular16"
-                  >
-                    Product 3
-                  </Text>
-                  <Text
-                    className="text-black-900 text-xl w-full"
-                    size="txtRobotoMedium20"
-                  >
-                    Product Data
-                  </Text>
-                  <div className="flex flex-row gap-2 items-center justify-start w-full">
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/pencil_icon.png"
-                      alt="icon"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/bin_icon.png"
-                      alt="icon_One"
-                    />
-                  </div>
-                </div>
-              </div>
+              {products.map((product, index) => (
+                <SellerProductCard
+                  key={index}
+                  productName={product.name}
+                  productData={product.data}
+                  productImageSrc={product.imageSrc}
+                  onEdit={() => handleEdit(product.name)}
+                  onDelete={() => handleDelete(product.name)}
+                />
+              ))}
             </List>
+            <Modal
+              isOpen={isPopupOpen}
+              onRequestClose={closePopup}
+              style={customStyles}
+              contentLabel="Product Deleted"
+            >
+              <div>
+                <h2>Product Deleted Successfully!</h2>
+                <div className="action-buttons">
+                  <button className="close-button" style={{ backgroundColor: 'blue' }} onClick={closePopup}>Close</button>
+                </div>
+              </div>
+            </Modal>
           </div>
           <Line className="bg-black-900_19 h-px w-full" />
         </div>
