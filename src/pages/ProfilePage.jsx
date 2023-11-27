@@ -79,7 +79,7 @@ const ProfilePagePage = () => {
               </Button>
               <Button
                 className="common-pointer cursor-pointer rounded-md text-center text-sm w-full"
-                onClick={() => navigate("/editprofilepage")}
+                onClick={() => navigate("/loginpage")}
                 shape="round"
                 color="blue_gray_100_7f"
                 size="sm"
