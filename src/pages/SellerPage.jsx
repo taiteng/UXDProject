@@ -6,8 +6,6 @@ import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const SellerPagePage = () => {
   const navigate = useNavigate();
 
@@ -28,7 +26,6 @@ const SellerPagePage = () => {
             <div className="flex flex-col items-start justify-start w-auto">
               <Button
                 className="common-pointer cursor-pointer font-medium min-w-[173px] text-base text-center"
-                onClick={() => navigate("/")}
                 shape="round"
                 variant="outline"
               >
@@ -166,12 +163,12 @@ const SellerPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_9.png"
+                      src="images/pencil_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_10.png"
+                      src="images/bin_icon.png"
                       alt="icon_One"
                     />
                   </div>
@@ -204,12 +201,12 @@ const SellerPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_9.png"
+                      src="images/pencil_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_10.png"
+                      src="images/bin_icon.png"
                       alt="icon_One"
                     />
                   </div>
@@ -242,12 +239,12 @@ const SellerPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_9.png"
+                      src="images/pencil_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_10.png"
+                      src="images/bin_icon.png"
                       alt="icon_One"
                     />
                   </div>

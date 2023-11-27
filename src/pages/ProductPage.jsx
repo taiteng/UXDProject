@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from 'react-modal';
 
 import { useNavigate } from "react-router-dom";
 
@@ -6,15 +7,62 @@ import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const ProductPagePage = () => {
   const navigate = useNavigate();
 
   const [textfieldvalue, setTextfieldvalue] = React.useState("");
 
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+      setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+      setPopupOpen(false);
+  };
+
+  const handleReview = () => {
+    openPopup();
+  }
+
+  const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    },
+  };
+
   return (
     <>
+    <style>
+      {`
+        .action-buttons {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        
+        .close-button {
+          background-color: #1976d2;
+          color: #ffffff;
+          border: none;
+          border-radius: 4px;
+          padding: 8px 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin-left: 10px;
+        }
+        
+        .close-button:hover, {
+          background-color: #1565c0;
+        }
+      `}
+      </style>
       <div className="bg-white-A700 flex flex-col font-roboto items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <Header className="flex flex-col gap-[60px] items-center justify-center md:px-5 px-[170px] py-[60px] w-full" />
         <div className="flex flex-col items-center justify-center md:px-10 sm:px-5 px-[170px] py-[60px] w-full">
@@ -42,18 +90,18 @@ const ProductPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="common-pointer h-[43px] md:h-auto object-cover w-10"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                       onClick={() => navigate("/cartpage")}
                     />
                     <Img
                       className="h-[43px] md:h-auto object-cover w-10"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[43px] md:h-auto object-cover w-10"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -283,12 +331,12 @@ const ProductPagePage = () => {
                 <div className="flex flex-row gap-2 items-center justify-start w-full">
                   <Img
                     className="h-[19px] md:h-auto object-cover w-[18px]"
-                    src="images/img_icon_19x18.png"
+                    src="images/like_icon.png"
                     alt="icon"
                   />
                   <Img
                     className="h-[19px] md:h-auto object-cover w-[18px]"
-                    src="images/img_icon_1.png"
+                    src="images/dislike_icon.png"
                     alt="icon_One"
                   />
                 </div>
@@ -321,12 +369,12 @@ const ProductPagePage = () => {
                 <div className="flex flex-row gap-2 items-center justify-start w-full">
                   <Img
                     className="h-[19px] md:h-auto object-cover w-[18px]"
-                    src="images/img_icon_19x18.png"
+                    src="images/like_icon.png"
                     alt="icon"
                   />
                   <Img
                     className="h-[19px] md:h-auto object-cover w-[18px]"
-                    src="images/img_icon_1.png"
+                    src="images/dislike_icon.png"
                     alt="icon_One"
                   />
                 </div>
@@ -359,12 +407,12 @@ const ProductPagePage = () => {
                 <div className="flex flex-row gap-2 items-center justify-start w-full">
                   <Img
                     className="h-[19px] md:h-auto object-cover w-[18px]"
-                    src="images/img_icon_19x18.png"
+                    src="images/like_icon.png"
                     alt="icon"
                   />
                   <Img
                     className="h-[19px] md:h-auto object-cover w-[18px]"
-                    src="images/img_icon_1.png"
+                    src="images/dislike_icon.png"
                     alt="icon_One"
                   />
                 </div>
@@ -431,6 +479,7 @@ const ProductPagePage = () => {
                   placeholder="Write your rating here (1 - 5)"
                   className="p-0 placeholder:text-black-900_7f text-left text-sm w-full"
                   wrapClassName="border border-black-900_19 border-solid w-full"
+                  type="number"
                   shape="round"
                   color="white_A700"
                   size="xs"
@@ -441,12 +490,26 @@ const ProductPagePage = () => {
                 <Button
                   className="cursor-pointer font-medium text-base text-center w-40"
                   shape="round"
+                  onClick={handleReview}
                 >
                   Submit
                 </Button>
               </div>
             </div>
           </div>
+          <Modal
+            isOpen={isPopupOpen}
+            onRequestClose={closePopup}
+            style={customStyles}
+            contentLabel="Review Success"
+          >
+            <div>
+              <h2>Successfully Placed A Review!</h2>
+              <div className="action-buttons">
+                <button className="close-button" style={{ backgroundColor: 'blue' }} onClick={closePopup}>Close</button>
+              </div>
+            </div>
+          </Modal>
           <Line className="bg-black-900_19 h-px w-full" />
         </div>
         <Footer className="flex items-center justify-center md:px-5 w-full" />

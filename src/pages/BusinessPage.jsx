@@ -4,8 +4,6 @@ import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const BusinessPagePage = () => {
   const [textfieldvalue, setTextfieldvalue] = React.useState("");
 
@@ -73,7 +71,7 @@ const BusinessPagePage = () => {
                 <div className="bg-black-900_0c flex flex-col h-[100px] items-center justify-end p-3 rounded-[50%] w-[100px]">
                   <Img
                     className="h-[74px] md:h-auto object-cover w-[93%]"
-                    src="images/img_icon_74x70.png"
+                    src="images/building_icon.png"
                     alt="icon"
                   />
                 </div>
@@ -102,7 +100,7 @@ const BusinessPagePage = () => {
                 <div className="bg-black-900_0c flex flex-col h-[100px] items-center justify-end p-3 rounded-[50%] w-[100px]">
                   <Img
                     className="h-[74px] md:h-auto object-cover w-[93%]"
-                    src="images/img_icon_2.png"
+                    src="images/tree_icon.png"
                     alt="icon"
                   />
                 </div>
@@ -131,7 +129,7 @@ const BusinessPagePage = () => {
                 <div className="bg-black-900_0c flex flex-col h-[100px] items-center justify-end p-3 rounded-[50%] w-[100px]">
                   <Img
                     className="h-[74px] md:h-auto object-cover w-[93%]"
-                    src="images/img_icon_7.png"
+                    src="images/leaf_icon.png"
                     alt="icon"
                   />
                 </div>

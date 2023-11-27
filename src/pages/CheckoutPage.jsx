@@ -6,8 +6,6 @@ import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const CheckoutPagePage = () => {
   const navigate = useNavigate();
 

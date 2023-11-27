@@ -6,8 +6,6 @@ import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const OrderStatusPagePage = () => {
   const navigate = useNavigate();
 
@@ -72,7 +70,7 @@ const OrderStatusPagePage = () => {
                         >
                           Product 1
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -80,22 +78,21 @@ const OrderStatusPagePage = () => {
                             In Progress
                           </Text>
                         </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
+                              src="images/pencil_icon.png"
                               alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
                               alt="icon_Two"
                             />
                           </div>
@@ -129,23 +126,22 @@ const OrderStatusPagePage = () => {
                         >
                           Product 2
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Four"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Five"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
@@ -178,7 +174,7 @@ const OrderStatusPagePage = () => {
                         >
                           Product 3
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -186,23 +182,22 @@ const OrderStatusPagePage = () => {
                             In Progress
                           </Text>
                         </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Seven"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Eight"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
@@ -235,9 +230,9 @@ const OrderStatusPagePage = () => {
                           className="text-base text-black-900 w-full"
                           size="txtRobotoRegular16"
                         >
-                          Product 1
+                          Product 2
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -245,23 +240,22 @@ const OrderStatusPagePage = () => {
                             In Progress
                           </Text>
                         </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Ten"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Eleven"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
@@ -292,25 +286,24 @@ const OrderStatusPagePage = () => {
                           className="text-base text-black-900 w-full"
                           size="txtRobotoRegular16"
                         >
-                          Product 2
+                          Product 4
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Thirteen"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Fourteen"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
@@ -341,9 +334,9 @@ const OrderStatusPagePage = () => {
                           className="text-base text-black-900 w-full"
                           size="txtRobotoRegular16"
                         >
-                          Product 3
+                          Product 6
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -351,23 +344,22 @@ const OrderStatusPagePage = () => {
                             In Progress
                           </Text>
                         </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Sixteen"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Seventeen"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
@@ -409,7 +401,7 @@ const OrderStatusPagePage = () => {
                         >
                           Product 1
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -417,22 +409,21 @@ const OrderStatusPagePage = () => {
                             In Progress
                           </Text>
                         </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
+                              src="images/pencil_icon.png"
                               alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
                               alt="icon_Two"
                             />
                           </div>
@@ -466,23 +457,22 @@ const OrderStatusPagePage = () => {
                         >
                           Product 2
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Four"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Five"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
@@ -515,7 +505,7 @@ const OrderStatusPagePage = () => {
                         >
                           Product 3
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -523,23 +513,22 @@ const OrderStatusPagePage = () => {
                             In Progress
                           </Text>
                         </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Seven"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Eight"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
@@ -572,9 +561,9 @@ const OrderStatusPagePage = () => {
                           className="text-base text-black-900 w-full"
                           size="txtRobotoRegular16"
                         >
-                          Product 1
+                          Product 6
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -582,23 +571,22 @@ const OrderStatusPagePage = () => {
                             In Progress
                           </Text>
                         </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Ten"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Eleven"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
@@ -629,25 +617,24 @@ const OrderStatusPagePage = () => {
                           className="text-base text-black-900 w-full"
                           size="txtRobotoRegular16"
                         >
-                          Product 2
+                          Product 4
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Thirteen"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Fourteen"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
@@ -678,9 +665,9 @@ const OrderStatusPagePage = () => {
                           className="text-base text-black-900 w-full"
                           size="txtRobotoRegular16"
                         >
-                          Product 3
+                          Product 6
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -688,23 +675,22 @@ const OrderStatusPagePage = () => {
                             In Progress
                           </Text>
                         </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <div className="flex flex-row gap-2 items-center justify-start w-auto">
-                            <Text
-                              className="text-base text-black-900 text-center w-auto"
-                              size="txtRobotoRegular16"
-                            >
-                              Edit Status
-                            </Text>
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_11.png"
-                              alt="icon_Sixteen"
+                              src="images/pencil_icon.png"
+                              alt="icon_One"
                             />
                             <Img
                               className="h-[19px] md:h-auto object-cover w-[18px]"
-                              src="images/img_icon_8.png"
-                              alt="icon_Seventeen"
+                              src="images/tick_icon.png"
+                              alt="icon_One"
+                            />
+                            <Img
+                              className="h-[19px] md:h-auto object-cover w-[18px]"
+                              src="images/x_icon.png"
+                              alt="icon_Two"
                             />
                           </div>
                         </div>
