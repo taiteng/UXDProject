@@ -18,15 +18,19 @@ const OrderStatusPagePage = () => {
   };
 
   const handleStatus = (order) => {
+    openPopup();
+    setReq('Status');
     console.log(`Status order: Delivered`);
   };
 
   const handleDelete = (order) => {
     openPopup();
+    setReq('Delete');
     console.log(`Deleted order: ${order}`);
   };
 
   const [isPopupOpen, setPopupOpen] = useState(false);
+  const [req, setReq] = useState('');
 
   const openPopup = () => {
       setPopupOpen(true);
@@ -102,7 +106,7 @@ const OrderStatusPagePage = () => {
           contentLabel="Order Deleted"
         >
           <div>
-            <h2>Order Deleted Successfully!</h2>
+            {req == 'Status' ? <h2>Order Completed!</h2> : <h2>Order Deleted Successfully!</h2>}
             <div className="action-buttons">
               <button className="close-button" style={{ backgroundColor: 'blue' }} onClick={closePopup}>Close</button>
             </div>
