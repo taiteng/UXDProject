@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import ProductCard from "components/ProductCard";
 
 const SearchPagePage = () => {
   const navigate = useNavigate();
@@ -64,302 +65,48 @@ const SearchPagePage = () => {
               className="sm:flex-col flex-row gap-10 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center py-5 w-full"
               orientation="horizontal"
             >
-              <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
-                <div className="flex flex-col h-[340px] md:h-auto items-start justify-start w-[340px]">
-                  <div className="bg-blue_gray-100_7f flex flex-col md:gap-10 gap-[139px] h-[340px] items-center justify-start pb-[127px] md:pr-10 sm:pr-5 pr-[127px] w-[340px]">
-                    <Button
-                      className="cursor-pointer font-medium min-w-[80px] rounded-br-md rounded-tl-md text-center text-xs"
-                      color="black_900_0c"
-                      size="xs"
-                    >
-                      Sustainable
-                    </Button>
-                    <Text
-                      className="mb-[34px] text-black-900 text-center text-xs"
-                      size="txtRobotoRegular12"
-                    >
-                      Product Image 1
-                    </Text>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 items-start justify-start p-3 w-full">
-                  <Text
-                    className="text-base text-black-900 w-full"
-                    size="txtRobotoRegular16"
-                  >
-                    Eco Product 1
-                  </Text>
-                  <Text
-                    className="text-black-900 text-xl w-full"
-                    size="txtRobotoMedium20"
-                  >
-                    $19.99
-                  </Text>
-                  <div className="flex flex-row gap-2 items-center justify-start w-full">
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/cart_icon.png"
-                      alt="icon"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/like_icon.png"
-                      alt="icon_One"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/dislike_icon.png"
-                      alt="icon_Two"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
-                <div className="flex flex-col h-[340px] md:h-auto items-start justify-start w-[340px]">
-                  <div className="bg-blue_gray-100_7f flex flex-col md:gap-10 gap-[139px] h-[340px] items-center justify-start pb-[125px] md:pr-10 sm:pr-5 pr-[125px] w-[340px]">
-                    <Button
-                      className="cursor-pointer font-medium min-w-[58px] rounded-br-md rounded-tl-md text-center text-xs"
-                      color="black_900_0c"
-                      size="xs"
-                    >
-                      Organic
-                    </Button>
-                    <Text
-                      className="mb-9 text-black-900 text-center text-xs"
-                      size="txtRobotoRegular12"
-                    >
-                      Product Image 2
-                    </Text>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 items-start justify-start p-3 w-full">
-                  <Text
-                    className="text-base text-black-900 w-full"
-                    size="txtRobotoRegular16"
-                  >
-                    Eco Product 2
-                  </Text>
-                  <Text
-                    className="text-black-900 text-xl w-full"
-                    size="txtRobotoMedium20"
-                  >
-                    $29.99
-                  </Text>
-                  <div className="flex flex-row gap-2 items-center justify-start w-full">
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/cart_icon.png"
-                      alt="icon"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/like_icon.png"
-                      alt="icon_One"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/dislike_icon.png"
-                      alt="icon_Two"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
-                <div className="flex flex-col h-[340px] md:h-auto items-start justify-start w-[340px]">
-                  <div className="bg-blue_gray-100_7f flex flex-col h-[340px] items-center justify-center p-[125px] md:px-10 sm:px-5 w-[340px]">
-                    <Text
-                      className="my-9 text-black-900 text-center text-xs"
-                      size="txtRobotoRegular12"
-                    >
-                      Product Image 3
-                    </Text>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 items-start justify-start p-3 w-full">
-                  <Text
-                    className="text-base text-black-900 w-full"
-                    size="txtRobotoRegular16"
-                  >
-                    Eco Product 3
-                  </Text>
-                  <Text
-                    className="text-black-900 text-xl w-full"
-                    size="txtRobotoMedium20"
-                  >
-                    $39.99
-                  </Text>
-                  <div className="flex flex-row gap-2 items-center justify-start w-full">
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/cart_icon.png"
-                      alt="icon"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/like_icon.png"
-                      alt="icon_One"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/dislike_icon.png"
-                      alt="icon_Two"
-                    />
-                  </div>
-                </div>
-              </div>
-            </List>
-          </div>
-          <Line className="bg-black-900_19 h-px w-full" />
-        </div>
-        <div className="flex flex-col md:gap-10 gap-[60px] items-center justify-center md:px-10 sm:px-5 px-[170px] py-[60px] w-full">
-          <div className="flex flex-col items-center justify-start max-w-[1100px] mx-auto w-full">
-            <List
-              className="common-pointer sm:flex-col flex-row gap-10 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center py-5 w-full"
-              orientation="horizontal"
-            >
-              <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
-                <div className="flex flex-col h-[340px] md:h-auto items-start justify-start w-[340px]">
-                  <div className="bg-blue_gray-100_7f flex flex-col md:gap-10 gap-[139px] h-[340px] items-center justify-start pb-[127px] md:pr-10 sm:pr-5 pr-[127px] w-[340px]">
-                    <Button
-                      className="cursor-pointer font-medium min-w-[80px] rounded-br-md rounded-tl-md text-center text-xs"
-                      color="black_900_0c"
-                      size="xs"
-                    >
-                      Organic
-                    </Button>
-                    <Text
-                      className="mb-[34px] text-black-900 text-center text-xs"
-                      size="txtRobotoRegular12"
-                    >
-                      Product Image 4
-                    </Text>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 items-start justify-start p-3 w-full">
-                  <Text
-                    className="text-base text-black-900 w-full"
-                    size="txtRobotoRegular16"
-                  >
-                    Eco Product 4
-                  </Text>
-                  <Text
-                    className="text-black-900 text-xl w-full"
-                    size="txtRobotoMedium20"
-                  >
-                    $19.99
-                  </Text>
-                  <div className="flex flex-row gap-2 items-center justify-start w-full">
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/cart_icon.png"
-                      alt="icon"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/like_icon.png"
-                      alt="icon_One"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/dislike_icon.png"
-                      alt="icon_Two"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
-                <div className="flex flex-col h-[340px] md:h-auto items-start justify-start w-[340px]">
-                  <div className="bg-blue_gray-100_7f flex flex-col md:gap-10 gap-[139px] h-[340px] items-center justify-start pb-[125px] md:pr-10 sm:pr-5 pr-[125px] w-[340px]">
-                    <Button
-                      className="cursor-pointer font-medium min-w-[58px] rounded-br-md rounded-tl-md text-center text-xs"
-                      color="black_900_0c"
-                      size="xs"
-                    >
-                      Recycleable
-                    </Button>
-                    <Text
-                      className="mb-9 text-black-900 text-center text-xs"
-                      size="txtRobotoRegular12"
-                    >
-                      Product Image 5
-                    </Text>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 items-start justify-start p-3 w-full">
-                  <Text
-                    className="text-base text-black-900 w-full"
-                    size="txtRobotoRegular16"
-                  >
-                    Eco Product 5
-                  </Text>
-                  <Text
-                    className="text-black-900 text-xl w-full"
-                    size="txtRobotoMedium20"
-                  >
-                    $29.99
-                  </Text>
-                  <div className="flex flex-row gap-2 items-center justify-start w-full">
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/cart_icon.png"
-                      alt="icon"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/like_icon.png"
-                      alt="icon_One"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/dislike_icon.png"
-                      alt="icon_Two"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
-                <div className="flex flex-col h-[340px] md:h-auto items-start justify-start w-[340px]">
-                  <div className="bg-blue_gray-100_7f flex flex-col h-[340px] items-center justify-center p-[125px] md:px-10 sm:px-5 w-[340px]">
-                    <Text
-                      className="my-9 text-black-900 text-center text-xs"
-                      size="txtRobotoRegular12"
-                    >
-                      Product Image 6
-                    </Text>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 items-start justify-start p-3 w-full">
-                  <Text
-                    className="text-base text-black-900 w-full"
-                    size="txtRobotoRegular16"
-                  >
-                    Eco Product 6
-                  </Text>
-                  <Text
-                    className="text-black-900 text-xl w-full"
-                    size="txtRobotoMedium20"
-                  >
-                    $39.99
-                  </Text>
-                  <div className="flex flex-row gap-2 items-center justify-start w-full">
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/cart_icon.png"
-                      alt="icon"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/like_icon.png"
-                      alt="icon_One"
-                    />
-                    <Img
-                      className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/dislike_icon.png"
-                      alt="icon_Two"
-                    />
-                  </div>
-                </div>
-              </div>
+              <ProductCard
+                category="Sustainable"
+                imageSrc="images/product1.jpg"
+                imageName="Product Image 1"
+                productName="Eco Product 1"
+                price="19.99"
+              />
+              <ProductCard
+                category="Organic"
+                imageSrc="images/product2.jpg"
+                imageName="Product Image 2"
+                productName="Eco Product 2"
+                price="29.99"
+              />
+              <ProductCard
+                category="Miscellaneous"
+                imageSrc="images/product3.jpg"
+                imageName="Product Image 3"
+                productName="Eco Product 3"
+                price="39.99"
+              />
+              <ProductCard
+                category="Recycleable"
+                imageSrc="images/product4.jpg"
+                imageName="Product Image 4"
+                productName="Eco Product 4"
+                price="19.99"
+              />
+              <ProductCard
+                category="Biodegradable"
+                imageSrc="images/product5.jpg"
+                imageName="Product Image 5"
+                productName="Eco Product 5"
+                price="29.99"
+              />
+              <ProductCard
+                category="Electric"
+                imageSrc="images/product6.jpg"
+                imageName="Product Image 6"
+                productName="Eco Product 6"
+                price="39.99"
+              />
             </List>
           </div>
           <Line className="bg-black-900_19 h-px w-full" />

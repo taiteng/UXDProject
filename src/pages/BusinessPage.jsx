@@ -3,6 +3,7 @@ import React from "react";
 import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import BusinessCard from "components/BusinessCard";
 
 const BusinessPagePage = () => {
   const [textfieldvalue, setTextfieldvalue] = React.useState("");
@@ -67,93 +68,24 @@ const BusinessPagePage = () => {
               className="sm:flex-col flex-row gap-10 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center py-5 w-full"
               orientation="horizontal"
             >
-              <div className="flex flex-1 flex-col gap-5 items-center justify-center py-3 w-full">
-                <div className="bg-black-900_0c flex flex-col h-[100px] items-center justify-end p-3 rounded-[50%] w-[100px]">
-                  <Img
-                    className="h-[74px] md:h-auto object-cover w-[93%]"
-                    src="images/building_icon.png"
-                    alt="icon"
-                  />
-                </div>
-                <div className="flex flex-col gap-2 items-start justify-start w-full">
-                  <Text
-                    className="text-black-900 text-center text-xl w-full"
-                    size="txtRobotoRegular20"
-                  >
-                    Green Mart
-                  </Text>
-                  <Text
-                    className="text-base text-black-900_7f text-center w-full"
-                    size="txtRobotoRegular16Black9007f"
-                  >
-                    Organic grocery store
-                  </Text>
-                </div>
-                <Text
-                  className="sm:text-2xl md:text-[26px] text-[28px] text-black-900 text-center w-full"
-                  size="txtRobotoMedium28"
-                >
-                  123 Main Street
-                </Text>
-              </div>
-              <div className="flex flex-1 flex-col gap-5 items-center justify-center py-3 w-full">
-                <div className="bg-black-900_0c flex flex-col h-[100px] items-center justify-end p-3 rounded-[50%] w-[100px]">
-                  <Img
-                    className="h-[74px] md:h-auto object-cover w-[93%]"
-                    src="images/tree_icon.png"
-                    alt="icon"
-                  />
-                </div>
-                <div className="flex flex-col gap-2 items-start justify-start w-full">
-                  <Text
-                    className="text-black-900 text-center text-xl w-full"
-                    size="txtRobotoRegular20"
-                  >
-                    EcoLiving
-                  </Text>
-                  <Text
-                    className="text-base text-black-900_7f text-center w-full"
-                    size="txtRobotoRegular16Black9007f"
-                  >
-                    Sustainable home goods
-                  </Text>
-                </div>
-                <Text
-                  className="sm:text-2xl md:text-[26px] text-[28px] text-black-900 text-center w-full"
-                  size="txtRobotoMedium28"
-                >
-                  456 Elm Street
-                </Text>
-              </div>
-              <div className="flex flex-1 flex-col gap-5 items-center justify-center py-3 w-full">
-                <div className="bg-black-900_0c flex flex-col h-[100px] items-center justify-end p-3 rounded-[50%] w-[100px]">
-                  <Img
-                    className="h-[74px] md:h-auto object-cover w-[93%]"
-                    src="images/leaf_icon.png"
-                    alt="icon"
-                  />
-                </div>
-                <div className="flex flex-col gap-2 items-start justify-start w-full">
-                  <Text
-                    className="text-black-900 text-center text-xl w-full"
-                    size="txtRobotoRegular20"
-                  >
-                    Green Cuisine
-                  </Text>
-                  <Text
-                    className="text-base text-black-900_7f text-center w-full"
-                    size="txtRobotoRegular16Black9007f"
-                  >
-                    Plant-based restaurant
-                  </Text>
-                </div>
-                <Text
-                  className="sm:text-2xl md:text-[26px] text-[28px] text-black-900 text-center w-full"
-                  size="txtRobotoMedium28"
-                >
-                  789 Oak Street
-                </Text>
-              </div>
+              <BusinessCard
+                iconSrc="images/building_icon.png"
+                title="Green Mart"
+                description="Organic grocery store"
+                address="123 Main Street"
+              />
+              <BusinessCard
+                iconSrc="images/tree_icon.png"
+                title="EcoLiving"
+                description="Sustainable home goods"
+                address="456 Elm Street"
+              />
+              <BusinessCard
+                iconSrc="images/leaf_icon.png"
+                title="Green Cuisine"
+                description="Plant-based restaurant"
+                address="789 Oak Street"
+              />
             </List>
           </div>
           <Line className="bg-black-900_19 h-px w-full" />

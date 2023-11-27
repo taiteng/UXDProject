@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import OrderHistoryCard from "components/OrderHistorycard";
 
 const OrderHistoryPagePage = () => {
   const navigate = useNavigate();
@@ -44,425 +45,87 @@ const OrderHistoryPagePage = () => {
             <div className="flex flex-col md:gap-10 gap-[60px] items-center justify-start w-full">
               <div className="flex md:flex-col flex-row md:gap-10 gap-[60px] items-center justify-start max-w-[1100px] mx-auto md:px-5 w-full">
                 <div className="flex flex-1 flex-col gap-10 items-center justify-center py-5 w-full">
-                  <div className="flex flex-col items-center justify-start w-full">
-                    <div className="border border-black-900_19 border-solid flex sm:flex-col flex-row gap-4 items-start justify-center p-4 rounded-md w-full">
-                      <Img
-                        className="h-[100px] w-[100px]"
-                        src="images/img_imagecontainer.svg"
-                        alt="imagecontainer"
-                      />
-                      <div className="flex flex-1 flex-col gap-2 items-start justify-start w-full">
-                        <Text
-                          className="text-black-900 text-xl w-full"
-                          size="txtRobotoMedium20"
-                        >
-                          Order #12345
-                        </Text>
-                        <Text
-                          className="text-black-900_7f text-sm w-full"
-                          size="txtRobotoRegular14"
-                        >
-                          Placed on Jan 1, 2022
-                        </Text>
-                        <Text
-                          className="text-base text-black-900 w-full"
-                          size="txtRobotoRegular16"
-                        >
-                          Lorem ipsum dolor sit amet.
-                        </Text>
-                        <div className="flex flex-col items-start justify-start py-1 w-full">
-                          <Text
-                            className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
-                            size="txtRobotoRegular12"
-                          >
-                            Status: In Progress
-                          </Text>
-                        </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
-                          <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-full">
-                            <div className="bg-black-900_19 h-5 rounded-[50%] w-5"></div>
-                            <div className="flex flex-1 flex-col items-start justify-start w-full">
-                              <Text
-                                className="text-black-900 text-sm w-full"
-                                size="txtRobotoMedium14"
-                              >
-                                Seller A
-                              </Text>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-start w-full">
-                    <div className="border border-black-900_19 border-solid flex sm:flex-col flex-row gap-4 items-start justify-center p-4 rounded-md w-full">
-                      <Img
-                        className="h-[100px] w-[100px]"
-                        src="images/img_imagecontainer.svg"
-                        alt="imagecontainer_One"
-                      />
-                      <div className="flex flex-1 flex-col gap-2 items-start justify-start w-full">
-                        <Text
-                          className="text-black-900 text-xl w-full"
-                          size="txtRobotoMedium20"
-                        >
-                          Order #67890
-                        </Text>
-                        <Text
-                          className="text-black-900_7f text-sm w-full"
-                          size="txtRobotoRegular14"
-                        >
-                          Placed on Feb 15, 2022
-                        </Text>
-                        <Text
-                          className="text-base text-black-900 w-full"
-                          size="txtRobotoRegular16"
-                        >
-                          Consectetur adipiscing elit.
-                        </Text>
-                        <div className="flex flex-col items-start justify-start py-1 w-full">
-                          <Text
-                            className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
-                            size="txtRobotoRegular12"
-                          >
-                            Status: Delivered
-                          </Text>
-                        </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
-                          <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-full">
-                            <div className="bg-black-900_19 h-5 rounded-[50%] w-5"></div>
-                            <div className="flex flex-1 flex-col items-start justify-start w-full">
-                              <Text
-                                className="text-black-900 text-sm w-full"
-                                size="txtRobotoMedium14"
-                              >
-                                Seller B
-                              </Text>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <OrderHistoryCard
+                    orderNumber="12345"
+                    date="Jan 1, 2022"
+                    description="Lorem ipsum dolor sit amet."
+                    status="In Progress"
+                    seller="Seller A"
+                    imageSrc="images/img_imagecontainer.svg"
+                  />
+                  <OrderHistoryCard
+                    orderNumber="67890"
+                    date="Feb 15, 2022"
+                    description="Consectetur adipiscing elit."
+                    status="Delivered"
+                    seller="Seller B"
+                    imageSrc="images/img_imagecontainer.svg"
+                  />
                 </div>
                 <div className="flex flex-1 flex-col gap-10 items-center justify-center py-5 w-full">
-                  <div className="flex flex-col items-center justify-start w-full">
-                    <div className="border border-black-900_19 border-solid flex sm:flex-col flex-row gap-4 items-start justify-center p-4 rounded-md w-full">
-                      <Img
-                        className="h-[100px] w-[100px]"
-                        src="images/img_imagecontainer.svg"
-                        alt="imagecontainer_Two"
-                      />
-                      <div className="flex flex-1 flex-col gap-2 items-start justify-start w-full">
-                        <Text
-                          className="text-black-900 text-xl w-full"
-                          size="txtRobotoMedium20"
-                        >
-                          Order #12345
-                        </Text>
-                        <Text
-                          className="text-black-900_7f text-sm w-full"
-                          size="txtRobotoRegular14"
-                        >
-                          Placed on Jan 1, 2022
-                        </Text>
-                        <Text
-                          className="text-base text-black-900 w-full"
-                          size="txtRobotoRegular16"
-                        >
-                          Lorem ipsum dolor sit amet.
-                        </Text>
-                        <div className="flex flex-col items-start justify-start py-1 w-full">
-                          <Text
-                            className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
-                            size="txtRobotoRegular12"
-                          >
-                            Status: In Progress
-                          </Text>
-                        </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
-                          <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-full">
-                            <div className="bg-black-900_19 h-5 rounded-[50%] w-5"></div>
-                            <div className="flex flex-1 flex-col items-start justify-start w-full">
-                              <Text
-                                className="text-black-900 text-sm w-full"
-                                size="txtRobotoMedium14"
-                              >
-                                Seller A
-                              </Text>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-start w-full">
-                    <div className="border border-black-900_19 border-solid flex sm:flex-col flex-row gap-4 items-start justify-center p-4 rounded-md w-full">
-                      <Img
-                        className="h-[100px] w-[100px]"
-                        src="images/img_imagecontainer.svg"
-                        alt="imagecontainer_Three"
-                      />
-                      <div className="flex flex-1 flex-col gap-2 items-start justify-start w-full">
-                        <Text
-                          className="text-black-900 text-xl w-full"
-                          size="txtRobotoMedium20"
-                        >
-                          Order #67890
-                        </Text>
-                        <Text
-                          className="text-black-900_7f text-sm w-full"
-                          size="txtRobotoRegular14"
-                        >
-                          Placed on Feb 15, 2022
-                        </Text>
-                        <Text
-                          className="text-base text-black-900 w-full"
-                          size="txtRobotoRegular16"
-                        >
-                          Consectetur adipiscing elit.
-                        </Text>
-                        <div className="flex flex-col items-start justify-start py-1 w-full">
-                          <Text
-                            className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
-                            size="txtRobotoRegular12"
-                          >
-                            Status: Delivered
-                          </Text>
-                        </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
-                          <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-full">
-                            <div className="bg-black-900_19 h-5 rounded-[50%] w-5"></div>
-                            <div className="flex flex-1 flex-col items-start justify-start w-full">
-                              <Text
-                                className="text-black-900 text-sm w-full"
-                                size="txtRobotoMedium14"
-                              >
-                                Seller B
-                              </Text>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <OrderHistoryCard
+                    orderNumber="13579"
+                    date="Mar 10, 2022"
+                    description="Sed do eiusmod tempor."
+                    status="Shipped"
+                    seller="Seller C"
+                    imageSrc="images/img_imagecontainer.svg"
+                  />
+
+                  <OrderHistoryCard
+                    orderNumber="24680"
+                    date="Apr 20, 2022"
+                    description="Ut enim ad minim veniam."
+                    status="Cancelled"
+                    seller="Seller D"
+                    imageSrc="images/img_imagecontainer.svg"
+                  />
                 </div>
               </div>
-              <Line className="bg-black-900_19 h-px w-full" />
-            </div>
-          </div>
-          <div className="flex flex-1 flex-col items-center justify-center md:px-10 sm:px-5 px-[170px] py-[60px] w-full">
-            <div className="flex flex-col md:gap-10 gap-[60px] items-center justify-start w-full">
               <div className="flex md:flex-col flex-row md:gap-10 gap-[60px] items-center justify-start max-w-[1100px] mx-auto md:px-5 w-full">
                 <div className="flex flex-1 flex-col gap-10 items-center justify-center py-5 w-full">
-                  <div className="flex flex-col items-center justify-start w-full">
-                    <div className="border border-black-900_19 border-solid flex sm:flex-col flex-row gap-4 items-start justify-center p-4 rounded-md w-full">
-                      <Img
-                        className="h-[100px] w-[100px]"
-                        src="images/img_imagecontainer.svg"
-                        alt="imagecontainer"
-                      />
-                      <div className="flex flex-1 flex-col gap-2 items-start justify-start w-full">
-                        <Text
-                          className="text-black-900 text-xl w-full"
-                          size="txtRobotoMedium20"
-                        >
-                          Order #12345
-                        </Text>
-                        <Text
-                          className="text-black-900_7f text-sm w-full"
-                          size="txtRobotoRegular14"
-                        >
-                          Placed on Jan 1, 2022
-                        </Text>
-                        <Text
-                          className="text-base text-black-900 w-full"
-                          size="txtRobotoRegular16"
-                        >
-                          Lorem ipsum dolor sit amet.
-                        </Text>
-                        <div className="flex flex-col items-start justify-start py-1 w-full">
-                          <Text
-                            className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
-                            size="txtRobotoRegular12"
-                          >
-                            Status: In Progress
-                          </Text>
-                        </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
-                          <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-full">
-                            <div className="bg-black-900_19 h-5 rounded-[50%] w-5"></div>
-                            <div className="flex flex-1 flex-col items-start justify-start w-full">
-                              <Text
-                                className="text-black-900 text-sm w-full"
-                                size="txtRobotoMedium14"
-                              >
-                                Seller A
-                              </Text>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-start w-full">
-                    <div className="border border-black-900_19 border-solid flex sm:flex-col flex-row gap-4 items-start justify-center p-4 rounded-md w-full">
-                      <Img
-                        className="h-[100px] w-[100px]"
-                        src="images/img_imagecontainer.svg"
-                        alt="imagecontainer_One"
-                      />
-                      <div className="flex flex-1 flex-col gap-2 items-start justify-start w-full">
-                        <Text
-                          className="text-black-900 text-xl w-full"
-                          size="txtRobotoMedium20"
-                        >
-                          Order #67890
-                        </Text>
-                        <Text
-                          className="text-black-900_7f text-sm w-full"
-                          size="txtRobotoRegular14"
-                        >
-                          Placed on Feb 15, 2022
-                        </Text>
-                        <Text
-                          className="text-base text-black-900 w-full"
-                          size="txtRobotoRegular16"
-                        >
-                          Consectetur adipiscing elit.
-                        </Text>
-                        <div className="flex flex-col items-start justify-start py-1 w-full">
-                          <Text
-                            className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
-                            size="txtRobotoRegular12"
-                          >
-                            Status: Delivered
-                          </Text>
-                        </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
-                          <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-full">
-                            <div className="bg-black-900_19 h-5 rounded-[50%] w-5"></div>
-                            <div className="flex flex-1 flex-col items-start justify-start w-full">
-                              <Text
-                                className="text-black-900 text-sm w-full"
-                                size="txtRobotoMedium14"
-                              >
-                                Seller B
-                              </Text>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <OrderHistoryCard
+                    orderNumber="98765"
+                    date="May 5, 2022"
+                    description="Duis aute irure dolor."
+                    status="Completed"
+                    seller="Seller E"
+                    imageSrc="images/img_imagecontainer.svg"
+                  />
+
+                  <OrderHistoryCard
+                    orderNumber="54321"
+                    date="Jun 15, 2022"
+                    description="Excepteur sint occaecat."
+                    status="Pending"
+                    seller="Seller F"
+                    imageSrc="images/img_imagecontainer.svg"
+                  />
                 </div>
                 <div className="flex flex-1 flex-col gap-10 items-center justify-center py-5 w-full">
-                  <div className="flex flex-col items-center justify-start w-full">
-                    <div className="border border-black-900_19 border-solid flex sm:flex-col flex-row gap-4 items-start justify-center p-4 rounded-md w-full">
-                      <Img
-                        className="h-[100px] w-[100px]"
-                        src="images/img_imagecontainer.svg"
-                        alt="imagecontainer_Two"
-                      />
-                      <div className="flex flex-1 flex-col gap-2 items-start justify-start w-full">
-                        <Text
-                          className="text-black-900 text-xl w-full"
-                          size="txtRobotoMedium20"
-                        >
-                          Order #12345
-                        </Text>
-                        <Text
-                          className="text-black-900_7f text-sm w-full"
-                          size="txtRobotoRegular14"
-                        >
-                          Placed on Jan 1, 2022
-                        </Text>
-                        <Text
-                          className="text-base text-black-900 w-full"
-                          size="txtRobotoRegular16"
-                        >
-                          Lorem ipsum dolor sit amet.
-                        </Text>
-                        <div className="flex flex-col items-start justify-start py-1 w-full">
-                          <Text
-                            className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
-                            size="txtRobotoRegular12"
-                          >
-                            Status: In Progress
-                          </Text>
-                        </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
-                          <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-full">
-                            <div className="bg-black-900_19 h-5 rounded-[50%] w-5"></div>
-                            <div className="flex flex-1 flex-col items-start justify-start w-full">
-                              <Text
-                                className="text-black-900 text-sm w-full"
-                                size="txtRobotoMedium14"
-                              >
-                                Seller A
-                              </Text>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-start w-full">
-                    <div className="border border-black-900_19 border-solid flex sm:flex-col flex-row gap-4 items-start justify-center p-4 rounded-md w-full">
-                      <Img
-                        className="h-[100px] w-[100px]"
-                        src="images/img_imagecontainer.svg"
-                        alt="imagecontainer_Three"
-                      />
-                      <div className="flex flex-1 flex-col gap-2 items-start justify-start w-full">
-                        <Text
-                          className="text-black-900 text-xl w-full"
-                          size="txtRobotoMedium20"
-                        >
-                          Order #67890
-                        </Text>
-                        <Text
-                          className="text-black-900_7f text-sm w-full"
-                          size="txtRobotoRegular14"
-                        >
-                          Placed on Feb 15, 2022
-                        </Text>
-                        <Text
-                          className="text-base text-black-900 w-full"
-                          size="txtRobotoRegular16"
-                        >
-                          Consectetur adipiscing elit.
-                        </Text>
-                        <div className="flex flex-col items-start justify-start py-1 w-full">
-                          <Text
-                            className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
-                            size="txtRobotoRegular12"
-                          >
-                            Status: Delivered
-                          </Text>
-                        </div>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
-                          <div className="flex sm:flex-col flex-row gap-2 items-center justify-start w-full">
-                            <div className="bg-black-900_19 h-5 rounded-[50%] w-5"></div>
-                            <div className="flex flex-1 flex-col items-start justify-start w-full">
-                              <Text
-                                className="text-black-900 text-sm w-full"
-                                size="txtRobotoMedium14"
-                              >
-                                Seller B
-                              </Text>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <OrderHistoryCard
+                    orderNumber="27547"
+                    date="May 5, 2022"
+                    description="Duis aute irure dolor."
+                    status="Completed"
+                    seller="Seller G"
+                    imageSrc="images/img_imagecontainer.svg"
+                  />
+
+                  <OrderHistoryCard
+                    orderNumber="36236"
+                    date="Jun 15, 2022"
+                    description="Excepteur sint occaecat."
+                    status="Pending"
+                    seller="Seller H"
+                    imageSrc="images/img_imagecontainer.svg"
+                  />
                 </div>
               </div>
-              <Line className="bg-black-900_19 h-px w-full" />
             </div>
           </div>
         </List>
+        <Line className="bg-black-900_19 h-px w-full" />
         <Footer className="flex items-center justify-center md:px-5 w-full" />
       </div>
     </>
