@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from 'react-modal';
 
 import { useNavigate } from "react-router-dom";
 
@@ -12,15 +13,65 @@ const CartPagePage = () => {
 
   const [textfieldvalue, setTextfieldvalue] = React.useState("");
 
+  const handleRemove = (cart) => {
+    openPopup();
+    console.log(`Deleted cart: ${cart}`);
+  };
+
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+      setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+      setPopupOpen(false);
+  };
+
   const cartItems = [
-    { productName: 'Product Name 1', productData: 'Some data about Product 1', quantity: 2, imageSrc: 'images/x_icon.png' },
-    { productName: 'Product Name 2', productData: 'Some data about Product 2', quantity: 1, imageSrc: 'images/x_icon.png' },
-    { productName: 'Product Name 3', productData: 'Some data about Product 3', quantity: 1, imageSrc: 'images/x_icon.png' },
-    { productName: 'Product Name 4', productData: 'Some data about Product 4', quantity: 1, imageSrc: 'images/x_icon.png' },
+    { productName: 'Product Name 1', productData: 'Some data about Product 1', quantity: 2, imageSrc: 'images/x_icon.png', onRemove: handleRemove },
+    { productName: 'Product Name 2', productData: 'Some data about Product 2', quantity: 1, imageSrc: 'images/x_icon.png', onRemove: handleRemove },
+    { productName: 'Product Name 3', productData: 'Some data about Product 3', quantity: 1, imageSrc: 'images/x_icon.png', onRemove: handleRemove },
+    { productName: 'Product Name 4', productData: 'Some data about Product 4', quantity: 1, imageSrc: 'images/x_icon.png', onRemove: handleRemove },
   ];
+
+  const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    },
+  };
 
   return (
     <>
+      <style>
+      {`
+        .action-buttons {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        
+        .close-button {
+          background-color: #1976d2;
+          color: #ffffff;
+          border: none;
+          border-radius: 4px;
+          padding: 8px 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin-left: 10px;
+        }
+        
+        .close-button:hover, {
+          background-color: #1565c0;
+        }
+      `}
+      </style>
       <div className="bg-white-A700 flex flex-col font-roboto items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <Header className="flex flex-col gap-[60px] items-center justify-center md:px-5 px-[170px] py-[60px] w-full" />
         <div className="flex flex-col md:gap-10 gap-[60px] items-center justify-center md:px-10 sm:px-5 px-[170px] py-[60px] w-full">
@@ -70,6 +121,19 @@ const CartPagePage = () => {
                   </Button>
                 </div>
               </div>
+              <Modal
+                isOpen={isPopupOpen}
+                onRequestClose={closePopup}
+                style={customStyles}
+                contentLabel="Cart Deleted"
+              >
+                <div>
+                  <h2>Cart Deleted Successfully!</h2>
+                  <div className="action-buttons">
+                    <button className="close-button" style={{ backgroundColor: 'blue' }} onClick={closePopup}>Close</button>
+                  </div>
+                </div>
+              </Modal>
               <List className="flex-1 sm:flex-col flex-row gap-10 grid sm:grid-cols-1 grid-cols-2 justify-center w-full" orientation="horizontal" style={{ overflowX: 'auto' }}>
                 {cartItems.map((item, index) => (
                   <CartCard key={index} {...item} />

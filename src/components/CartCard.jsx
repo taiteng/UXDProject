@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Img } from 'components';
 
-const CartCard = ({ productName, productData, quantity, imageSrc }) => {
+const CartCard = ({ productName, productData, quantity, imageSrc, onRemove }) => {
   return (
     <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
       <div className="flex flex-col h-60 md:h-auto items-start justify-start w-60">
@@ -34,11 +34,15 @@ const CartCard = ({ productName, productData, quantity, imageSrc }) => {
               >
                 -
               </Text>
+              <div
+              onClick={onRemove}
+              >
               <Img
                 className="h-[19px] md:h-auto object-cover w-[18px]"
                 src={imageSrc}
                 alt={`icon_${productName}`}
               />
+              </div>
             </div>
           </div>
           <Text
