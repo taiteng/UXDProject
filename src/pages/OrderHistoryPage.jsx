@@ -6,8 +6,6 @@ import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const OrderHistoryPagePage = () => {
   const navigate = useNavigate();
 
@@ -72,7 +70,7 @@ const OrderHistoryPagePage = () => {
                         >
                           Lorem ipsum dolor sit amet.
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -122,7 +120,7 @@ const OrderHistoryPagePage = () => {
                         >
                           Consectetur adipiscing elit.
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -174,7 +172,7 @@ const OrderHistoryPagePage = () => {
                         >
                           Lorem ipsum dolor sit amet.
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -224,7 +222,7 @@ const OrderHistoryPagePage = () => {
                         >
                           Consectetur adipiscing elit.
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -283,7 +281,7 @@ const OrderHistoryPagePage = () => {
                         >
                           Lorem ipsum dolor sit amet.
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -333,7 +331,7 @@ const OrderHistoryPagePage = () => {
                         >
                           Consectetur adipiscing elit.
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -385,7 +383,7 @@ const OrderHistoryPagePage = () => {
                         >
                           Lorem ipsum dolor sit amet.
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"
@@ -435,7 +433,7 @@ const OrderHistoryPagePage = () => {
                         >
                           Consectetur adipiscing elit.
                         </Text>
-                        <div className="flex flex-col items-center justify-start py-1 w-full">
+                        <div className="flex flex-col items-start justify-start py-1 w-full">
                           <Text
                             className="bg-blue_gray-100_7f border border-black-900_19 border-solid justify-center px-1 py-0.5 rounded-sm text-black-900 text-xs w-auto"
                             size="txtRobotoRegular12"

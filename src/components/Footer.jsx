@@ -52,11 +52,6 @@ const Footer = (props) => {
                 </li>
               </ul>
             </div>
-            <Img
-              className="absolute h-[79px] object-cover right-[7%] top-[0] w-20"
-              src="images/img_livechat.png"
-              alt="livechat"
-            />
           </div>
           <div className="flex flex-col h-[69px] md:h-auto items-center justify-center max-w-[1440px] p-[60px] md:px-10 sm:px-5 w-full">
             <div className="flex flex-col h-[69px] md:h-auto items-center justify-center w-auto">

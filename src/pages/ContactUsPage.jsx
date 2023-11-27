@@ -4,8 +4,6 @@ import { Button, Img, Input, Line, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const ContactUsPagePage = () => {
   const [textfieldvalue, setTextfieldvalue] = React.useState("");
 

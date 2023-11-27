@@ -6,8 +6,6 @@ import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const HomePagePage = () => {
   const navigate = useNavigate();
 
@@ -107,17 +105,17 @@ const HomePagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -160,17 +158,17 @@ const HomePagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -206,17 +204,17 @@ const HomePagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -319,21 +317,21 @@ const HomePagePage = () => {
                         Eco-friendly products are made using sustainable
                         materials, reducing waste and carbon emissions.
                       </Text>
-                      <div className="flex flex-col items-center justify-start py-1 w-full">
-                        <div className="flex flex-row gap-2 items-center justify-start w-auto">
+                      <div className="flex flex-col items-start justify-start py-1 w-full">
+                        <div className="flex flex-row gap-2 items-start justify-start w-auto">
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_2.png"
+                            src="images/tree_icon.png"
                             alt="icon"
                           />
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_3.png"
+                            src="images/globe_icon.png"
                             alt="icon_One"
                           />
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_4.png"
+                            src="images/love_icon.png"
                             alt="icon_Two"
                           />
                         </div>
@@ -362,21 +360,21 @@ const HomePagePage = () => {
                         Choosing eco-friendly options means reducing exposure to
                         harmful chemicals, benefiting your health.
                       </Text>
-                      <div className="flex flex-col items-center justify-start py-1 w-full">
-                        <div className="flex flex-row gap-2 items-center justify-start w-auto">
+                      <div className="flex flex-col items-start justify-start py-1 w-full">
+                        <div className="flex flex-row gap-2 items-start justify-start w-auto">
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_2.png"
+                            src="images/tree_icon.png"
                             alt="icon"
                           />
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_3.png"
+                            src="images/globe_icon.png"
                             alt="icon_One"
                           />
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_4.png"
+                            src="images/love_icon.png"
                             alt="icon_Two"
                           />
                         </div>
@@ -406,21 +404,21 @@ const HomePagePage = () => {
                         businesses committed to sustainability and ethical
                         practices.
                       </Text>
-                      <div className="flex flex-col items-center justify-start py-1 w-full">
-                        <div className="flex flex-row gap-2 items-center justify-start w-auto">
+                      <div className="flex flex-col items-start justify-start py-1 w-full">
+                        <div className="flex flex-row gap-2 items-start justify-start w-auto">
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_2.png"
+                            src="images/tree_icon.png"
                             alt="icon"
                           />
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_3.png"
+                            src="images/globe_icon.png"
                             alt="icon_One"
                           />
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_4.png"
+                            src="images/love_icon.png"
                             alt="icon_Two"
                           />
                         </div>
@@ -482,17 +480,17 @@ const HomePagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_5.png"
+                      src="images/star_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_6.png"
+                      src="images/camera_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -525,17 +523,17 @@ const HomePagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_5.png"
+                      src="images/star_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_6.png"
+                      src="images/camera_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -570,7 +568,7 @@ const HomePagePage = () => {
                   <div className="bg-black-900_0c flex flex-col h-[100px] items-center justify-end p-3 rounded-[50%] w-[100px]">
                     <Img
                       className="h-[74px] md:h-auto object-cover w-[93%]"
-                      src="images/img_icon_2.png"
+                      src="images/tree_icon.png"
                       alt="icon"
                     />
                   </div>
@@ -599,7 +597,7 @@ const HomePagePage = () => {
                   <div className="bg-black-900_0c flex flex-col h-[100px] items-center justify-end p-3 rounded-[50%] w-[100px]">
                     <Img
                       className="h-[74px] md:h-auto object-cover w-[93%]"
-                      src="images/img_icon_3.png"
+                      src="images/globe_icon.png"
                       alt="icon"
                     />
                   </div>

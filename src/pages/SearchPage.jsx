@@ -6,8 +6,6 @@ import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const SearchPagePage = () => {
   const navigate = useNavigate();
 
@@ -55,10 +53,7 @@ const SearchPagePage = () => {
           </div>
         </div>
         <div className="flex flex-col md:gap-10 gap-[60px] items-center justify-center md:px-10 sm:px-5 px-[170px] py-[60px] w-full">
-          <div
-            className="common-pointer flex flex-col gap-6 items-center justify-start max-w-[1100px] mx-auto w-full"
-            onClick={() => navigate("/productpage")}
-          >
+          <div className="common-pointer flex flex-col gap-6 items-center justify-start max-w-[1100px] mx-auto w-full">
             <Text
               className="sm:text-4xl md:text-[38px] text-[40px] text-black-900 text-center w-auto"
               size="txtRobotoBold40"
@@ -103,17 +98,17 @@ const SearchPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -153,17 +148,17 @@ const SearchPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -196,17 +191,17 @@ const SearchPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -220,7 +215,6 @@ const SearchPagePage = () => {
           <div className="flex flex-col items-center justify-start max-w-[1100px] mx-auto w-full">
             <List
               className="common-pointer sm:flex-col flex-row gap-10 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center py-5 w-full"
-              onClick={() => navigate("/productpage")}
               orientation="horizontal"
             >
               <div className="border border-black-900_19 border-solid flex flex-1 flex-col items-center justify-start rounded-md w-full">
@@ -231,13 +225,13 @@ const SearchPagePage = () => {
                       color="black_900_0c"
                       size="xs"
                     >
-                      Sustainable
+                      Organic
                     </Button>
                     <Text
                       className="mb-[34px] text-black-900 text-center text-xs"
                       size="txtRobotoRegular12"
                     >
-                      Product Image 1
+                      Product Image 4
                     </Text>
                   </div>
                 </div>
@@ -246,7 +240,7 @@ const SearchPagePage = () => {
                     className="text-base text-black-900 w-full"
                     size="txtRobotoRegular16"
                   >
-                    Eco Product 1
+                    Eco Product 4
                   </Text>
                   <Text
                     className="text-black-900 text-xl w-full"
@@ -257,17 +251,17 @@ const SearchPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -281,13 +275,13 @@ const SearchPagePage = () => {
                       color="black_900_0c"
                       size="xs"
                     >
-                      Organic
+                      Recycleable
                     </Button>
                     <Text
                       className="mb-9 text-black-900 text-center text-xs"
                       size="txtRobotoRegular12"
                     >
-                      Product Image 2
+                      Product Image 5
                     </Text>
                   </div>
                 </div>
@@ -296,7 +290,7 @@ const SearchPagePage = () => {
                     className="text-base text-black-900 w-full"
                     size="txtRobotoRegular16"
                   >
-                    Eco Product 2
+                    Eco Product 5
                   </Text>
                   <Text
                     className="text-black-900 text-xl w-full"
@@ -307,17 +301,17 @@ const SearchPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>
@@ -330,7 +324,7 @@ const SearchPagePage = () => {
                       className="my-9 text-black-900 text-center text-xs"
                       size="txtRobotoRegular12"
                     >
-                      Product Image 3
+                      Product Image 6
                     </Text>
                   </div>
                 </div>
@@ -339,7 +333,7 @@ const SearchPagePage = () => {
                     className="text-base text-black-900 w-full"
                     size="txtRobotoRegular16"
                   >
-                    Eco Product 3
+                    Eco Product 6
                   </Text>
                   <Text
                     className="text-black-900 text-xl w-full"
@@ -350,17 +344,17 @@ const SearchPagePage = () => {
                   <div className="flex flex-row gap-2 items-center justify-start w-full">
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon.png"
+                      src="images/cart_icon.png"
                       alt="icon"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_19x18.png"
+                      src="images/like_icon.png"
                       alt="icon_One"
                     />
                     <Img
                       className="h-[19px] md:h-auto object-cover w-[18px]"
-                      src="images/img_icon_1.png"
+                      src="images/dislike_icon.png"
                       alt="icon_Two"
                     />
                   </div>

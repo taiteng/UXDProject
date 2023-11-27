@@ -6,8 +6,6 @@ import { Button, Img, Input, Line, List, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
-import { CloseSVG } from "../assets/images";
-
 const CartPagePage = () => {
   const navigate = useNavigate();
 
@@ -108,7 +106,7 @@ const CartPagePage = () => {
                           </Text>
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_8.png"
+                            src="images/x_icon.png"
                             alt="icon_Two"
                           />
                         </div>
@@ -163,7 +161,7 @@ const CartPagePage = () => {
                           </Text>
                           <Img
                             className="h-[19px] md:h-auto object-cover w-[18px]"
-                            src="images/img_icon_8.png"
+                            src="images/x_icon.png"
                             alt="icon_Two"
                           />
                         </div>
