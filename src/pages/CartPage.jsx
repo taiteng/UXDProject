@@ -64,6 +64,7 @@ const CartPagePage = () => {
                   <Button
                     className="cursor-pointer font-medium text-base text-center w-40"
                     shape="round"
+                    onClick={() => navigate("/checkoutpage")}
                   >
                     Checkout
                   </Button>
