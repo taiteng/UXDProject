@@ -81,6 +81,7 @@ const Header = (props) => {
                           className="cursor-pointer h-5 ml-[35px] my-auto"
                           src="images/img_search.svg"
                           alt="search"
+                          onClick={() => navigate("/searchpage")}
                         />
                       )
                     }
